@@ -1,27 +1,63 @@
 .header {
+    color: $colorSecundario;
     background-image: url(../../assets/images/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100vh;
+    
     &:before {
         content: " ";
         position :absolute;
         background-color: black;
         width: 100%;
         height: 100vh;
-        opacity: 0.7;
+        opacity: 0.3;
     }
-    
+  
+
     &__navegacion {
         background-color: $colorPrimario;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .logo {
+            a{
+                color: $colorSecundario;
+            }
+        }
+        .menu-Desktop {  
+            display: flex;
+            li{
+                list-style: none;
+                margin-left: 35px;
+                a{
+                    color: $colorSecundario;
+                }
+            }
+        }
+        
     }
 
+    .titulo {
+        text-align: center;
+        
+       h1{
+           font-size: 100px;
+           span{
+            font-size: 50px;
+        }
+        
+       }
+    }
     .menu-mobile {
         display: none;
         @media #{$media-celular} {
             display: block;
         }
     }
+
+
+
 }
