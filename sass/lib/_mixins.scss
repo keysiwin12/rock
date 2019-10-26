@@ -1,0 +1,26 @@
+@mixin imagen {
+    margin : 80px 100px;
+    width: $anchoImagen;
+    height: $altoImagen;
+    border-radius: 50%;
+
+}
+
+@mixin texto {
+    margin: 140px 100px;
+    font-family: cursive;
+    h2 {
+        font-size: $letraGrande;
+    } 
+    p {
+        font-size: $letraChica;
+    }
+}
+
+@mixin centro {
+    display: flex;
+    @media #{$media-celular} {
+        flex-direction: column;
+    }
+    justify-content: center;
+}

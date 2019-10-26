@@ -1,0 +1,48 @@
+.seccion-uno__imagen {
+    width: 30%;
+    img {
+    @include imagen ;
+    }
+}
+
+.seccion-dos__imagen { 
+    width: 30%;
+    img {
+    @include imagen ;
+    }
+}
+
+.seccion-tres__imagen {
+    width: 30%;
+    img {
+    @include imagen ;
+    }
+}
+
+.seccion-uno__parrafo {
+    width: 30%;
+    @include texto ;    
+}
+
+.seccion-dos__parrafo {
+    width: 30%;
+    @include texto ;
+}
+
+.seccion-tres__parrafo{
+    width: 30%;
+    @include texto;
+}
+
+.seccion-uno {
+    @include centro;
+}
+
+.seccion-dos {
+    @include centro;
+}
+
+.seccion-tres {
+    @include centro;
+}
+

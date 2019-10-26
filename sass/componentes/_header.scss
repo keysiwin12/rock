@@ -1,63 +1,166 @@
-.header {
-    color: $colorSecundario;
-    background-image: url(../../assets/images/header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
+*{
+    margin: 0px;
+    padding: 0px;
     
-    &:before {
-        content: " ";
-        position :absolute;
-        background-color: black;
-        width: 100%;
-        height: 100vh;
-        opacity: 0.3;
-    }
-  
+}
 
+.header {
+    height: 100vh;
+    background-image: url("../../assets/images/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &:before {
+        content: "";
+        width: 100%;
+        background-color: $colorPrimario;
+        opacity: 0.7;
+        height: 100vh;
+        position: absolute;
+    }
     &__navegacion {
         background-color: $colorPrimario;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        .logo {
-            a{
-                color: $colorSecundario;
-            }
-        }
-        .menu-Desktop {  
-            display: flex;
-            li{
-                list-style: none;
-                margin-left: 35px;
-                a{
-                    color: $colorSecundario;
-                }
-            }
-        }
-        
-    }
-
-    .titulo {
-        text-align: center;
-        
-       h1{
-           font-size: 100px;
-           span{
-            font-size: 50px;
-        }
-        
-       }
-    }
-    .menu-mobile {
-        display: none;
+        justify-content: space-between;
+        padding: 20px 100px;
+        position: relative;
         @media #{$media-celular} {
-            display: block;
+            padding: 20px;
         }
     }
 
+    &__titulo {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position:relative;
+        color: $colorSecundario;
+        font-size: 65px;
+        font-family: helvetica;
+        span{
+            font-size:60px
+        }
 
-
+    }
+    a{
+        text-decoration: none;
+        color: $colorSecundario;
+        font-size: 23px;                                                         ;
+    }
 }
+
+.navegacion__desktop {
+    display: flex;
+    list-style: none;
+    li{
+    margin: 0px 20px;
+    }
+
+    @media #{$media-celular} {
+        display: none;
+    }
+}
+
+.navegacion__mobile  {
+    display: none;
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    @media #{$media-celular} {
+        display: block;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .header {
+//     color: $colorSecundario;
+//     background-image: url(../../assets/images/header.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     width: 100%;
+//     height: 100vh;
+    
+//     &:before {
+//         content: " ";
+//         position :absolute;
+//         background-color: black;
+//         width: 100%;
+//         height: 100vh;
+//         opacity: 0.3;
+//     }
+  
+
+//     &__navegacion {
+//         background-color: $colorPrimario;
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: wrap;
+//         .logo {
+//             a{
+//                 color: $colorSecundario;
+//             }
+//         }
+//         .menu-Desktop {  
+//             display: flex;
+//             li{
+//                 list-style: none;
+//                 margin-left: 35px;
+//                 a{
+//                     color: $colorSecundario;
+//                 }
+//             }
+//         }
+        
+//     }
+
+//     .titulo {
+//         text-align: center;
+        
+//        h1{
+//            font-size: 100px;
+//            span{
+//             font-size: 50px;
+//         }
+        
+//        }
+//     }
+
+//     .navegacion__mobile {
+//         display: none;
+//         @media #{$media-celular} {
+//             display: block;
+//         }
+//     }
+
+
+
+// }

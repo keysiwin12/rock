@@ -5,62 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rock Site</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
   </head>
   <body>
     <header class="header">
       <nav class="header__navegacion">
-        <div class="logo">
+        <div class="navegacion__logo">
           <a href="#">Start Bootstrap</a>
         </div>
-        <div class="menu-mobile">
-          <img src="./assets/images/logo-menu.png" class="main-hamburger" alt="menu">
-        </div>
-        <ul class="menu-Desktop">
-          <li><a href="#">Home</a></li>
+          <ul class="navegacion__desktop">
+            <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+        <div class="navegacion__mobile">
+          <img class="img" src="./assets/images/logo-menu.png"alt="menu">
+        </div>
       </nav>
-      <div>
-        <div class="titulo">
+      <div class="header__titulo">
           <h1> One Page Wonder <br>
               <span>Will Rock Your Socks Off</span> 
           </h1>
-        </div>
       </div>
     </header>
-    <section>
-      <div>
-        <h2>For those about to rock...</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
+    <section class="seccion-uno">
+      <div class="seccion-uno__parrafo">
+        <div>
+            <h2>For those about to rock...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
+        </div>
       </div>
-      <figure>
+      <figure class="seccion-uno__imagen">
         <img src="assets/images/rock1.jpg" alt="image rock">
       </figure>
     </section>
-    <section>
-      <figure>
+    <section class="seccion-dos">
+      <figure class="seccion-dos__imagen">
         <img src="assets/images/rock3.jpg" alt="image rock">
       </figure>
-      <div>
-        <h2>We salute you!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
+      <div class="seccion-dos__parrafo">
+        <div>
+            <h2>We salute you!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
+
+        </div>
       </div>
     </section>
-    <section>
-      <div>
-        <h2>Let there be rock!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
+    <section class="seccion-tres">
+        <div class="seccion-tres__parrafo">
+        <div>
+          <h2>Let there be rock!</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores cum dicta dignissimos, eligendi ex excepturi in odio, perspiciatis porro quis quo quos sint sit temporibus. Est facilis quo tenetur?</p>
+        </div>
       </div>
-      <figure>
-        <img src="assets/images/rock2.jpg" alt="image rock">
-      </figure>
+        <figure class="seccion-tres__imagen">
+          <img src="assets/images/rock2.jpg" alt="image rock">
+        </figure>
     </section>
-    <footer>
-      <p>Copyright &#169; Your Website 2017</p>
+    <footer class="footer">
+        <p>Copyright &#169; Your Website 2017</p>
     </footer>
+
   </body>
 </html>
