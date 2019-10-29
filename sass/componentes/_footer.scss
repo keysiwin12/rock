@@ -1,0 +1,12 @@
+.footer {
+    color: $colorSecundario;
+    font-size: $letraChica; 
+    background-color: $colorPrimario;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media #{$media-celular} {
+        font-size: $letraChica - 5px;
+    }
+}

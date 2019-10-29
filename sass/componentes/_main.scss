@@ -1,48 +1,32 @@
-.seccion-uno__imagen {
-    width: 30%;
-    img {
-    @include imagen ;
-    }
-}
-
-.seccion-dos__imagen { 
-    width: 30%;
-    img {
-    @include imagen ;
-    }
-}
-
-.seccion-tres__imagen {
-    width: 30%;
-    img {
-    @include imagen ;
-    }
-}
-
-.seccion-uno__parrafo {
-    width: 30%;
-    @include texto ;    
-}
-
-.seccion-dos__parrafo {
-    width: 30%;
-    @include texto ;
-}
-
-.seccion-tres__parrafo{
-    width: 30%;
-    @include texto;
-}
-
 .seccion-uno {
     @include centro;
+    .seccion-uno__imagen { 
+        @include imagen ;
+    }
+    .seccion-uno__parrafo {
+        @include texto;    
+    }
+
 }
 
 .seccion-dos {
     @include centro;
+    .seccion-dos__imagen { 
+        @include imagen ;
+    }
+    .seccion-dos__parrafo {
+        @include texto ;
+    }
 }
 
 .seccion-tres {
     @include centro;
+    .seccion-tres__imagen {
+        @include imagen ;  
+    }
+    
+    .seccion-tres__parrafo{
+        @include texto;
+    }
 }
 
